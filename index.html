@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>  
+    <div class="container">
+    <form onsubmit=" return validateForm()">
+        <h1>
+            Form Validation
+        </h1>
+     <label for="name">Name:</label>
+     <input id="name" type="text" placeholder="Enter your name"  ><br/>
+     <label for="email">Email:</label>
+     <input id="email" type="email" placeholder="abc@example.com" ><br/>
+     <label for="phone">Phone:</label>
+     <input id="phone" type="tel" placeholder="10-digit number" ><br/>
+     <!-- bad me addd kiya h ye gender vala -->
+     <label>Gender:</label><br/>
+<input type="radio" name="gender" value="male"> Male<br/>
+<input type="radio" name="gender" value="female"> Female<br/>
+<input type="radio" name="gender" value="other"> Other<br/>
+  <!-- yha sbhi ka name attribute same taki ek hi select ho mutully exclusive -->
+     <button type="submit">Submit</button>
+     <!-- bad me simply interest k liye add kr rhe -->
+     <button onclick="toggleMode()">Toggle Dark Mode</button>
+
+     <!-- ye success msg bhi bad me add kiya -->
+     <div id="successMsg" style="color: green; margin-top: 10px;"></div>
+
+    </form>
+
+     
+    </div>
+     <script src="index.js"></script>
+</body>
+</html>
